@@ -13,6 +13,7 @@ class CharacterVector
       std::vector<char> characterVector;
 
    public:
+	int intVectorSize = static_cast<int> (characterVector.size()); 
       CharacterVector();
       ~CharacterVector();
 
