@@ -40,7 +40,11 @@ int main()
    std::cout << iv.size() << std::endl;
    std::cout << iv.get(1) << "[99]" <<std::endl;
    std::cout << "[out of range error message next line]" << std::endl;
-   std::cout << iv.get(4) << std::endl;   
+   try{
+       std::cout << iv.get(999) << std::endl;
+   }catch (const std::out_of_range& oor) {
+   std::cerr << "Out of Range error: " << oor.what() << std::endl;
+   }   
    std::cout << "--------------" << std::endl;
 
    //-------------------------------------------------------------------------
