@@ -10,23 +10,15 @@ CharacterVector::~CharacterVector() {}
 
 int CharacterVector::size() 
 {  
-<<<<<<< HEAD
-   return 0;
-=======
 	int size = static_cast<int>(characterVector.size());
 	return size;
->>>>>>> fae50aadb7ba52bf6ad0d5bcc6c94fdf83e1961f
 }
 
 // just return the character at the specified index; use the at() method rather
 // than [] so that an out_of_range error will be thrown for an invalid index
 char CharacterVector::get(int index) 
 { 
-<<<<<<< HEAD
-   return 0;
-=======
    return characterVector.at(index);
->>>>>>> fae50aadb7ba52bf6ad0d5bcc6c94fdf83e1961f
 }
 
 // if index is size-legitimate, put the value at that index;
