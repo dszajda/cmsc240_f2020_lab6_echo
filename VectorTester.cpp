@@ -11,14 +11,14 @@ int main()
 
    //-------------------------------------------------------------------------
 
-   // test CharacterVector: put, get, size, out_of_range
-
+   // test DoubleVector: put, get, size, out_of_range
+   std::cout << "----------------" << std::endl;
+   std::cout << "DoubleVector:" << std::endl;
+ 
    dv.put(1.0);
    dv.put(-1.0);
    dv.put(100);
 
-   std::cout << std::endl;
-   std::cout << "----------------" << std::endl;
    std::cout << dv.size() << std::endl;
    dv.put(5.0,1);
    dv.put(100.0, 100);
@@ -29,16 +29,33 @@ int main()
    catch (const std::out_of_range& oor){
 	std::cerr << "Out of Range error: " << oor.what() << std::endl;	
    }
-   std::cout << "CharacterVector:" << std::endl;
    std::cout << "----------------" << std::endl;
 
    //-------------------------------------------------------------------------
 
-   // test DoubleVector: put, get, size, out_of_range
+   // test CharacterVector: put, get, size, out_of_range
 
    std::cout << std::endl;
    std::cout << "-------------" << std::endl;
-   std::cout << "DoubleVector:" << std::endl;
+   std::cout << "CharacterVector:" << std::endl;
+
+    cv.put('p');
+    cv.put('u');
+    cv.put('d');
+    
+   std::cout << cv.size() << std::endl;
+       cv.put('a',1);
+       cv.put('b', 100);
+   std::cout << cv.size() << std::endl;
+   try {
+    
+        std::cout << cv.get(-1) << std::endl;
+        
+    } catch (const std::out_of_range& oor) {
+        
+    
+        std::cerr << "Out of Range error: " << oor.what() << std::endl;
+    }
    std::cout << "-------------" << std::endl;
 
    //-------------------------------------------------------------------------
