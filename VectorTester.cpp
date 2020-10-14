@@ -33,6 +33,12 @@ int main()
 
    std::cout << "--------------" << std::endl;
    std::cout << "IntegerVector:" << std::endl;
+   std::cout << iv.size() << std::endl;
+   std::cout << iv.put(2) << std::endl;
+   std::cout << iv.size() << std::endl
+   std::cout << iv.put(999) << std::endl;
+   std::cout << iv.size() << std::endl;
+   std::cout << iv.get(0) << "[2]" <<std::endl;
    std::cout << "--------------" << std::endl;
 
    //-------------------------------------------------------------------------
