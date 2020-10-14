@@ -10,22 +10,14 @@ DoubleVector::~DoubleVector() {}
 
 int DoubleVector::size() 
 {
-<<<<<<< HEAD
-   return 0;
-=======
    return doubleVector.size();
->>>>>>> fae50aadb7ba52bf6ad0d5bcc6c94fdf83e1961f
 }
 
 // just return the double at the specified index; use the at() method rather
 // than [] so that an out_of_range error will be thrown for an invalid index
 double DoubleVector::get(int index) 
-{ 
-<<<<<<< HEAD
-   return 0;
-=======
+{
    return doubleVector.at(index);
->>>>>>> fae50aadb7ba52bf6ad0d5bcc6c94fdf83e1961f
 }
 
 // if index is size-legitimate, put the value at that index;
