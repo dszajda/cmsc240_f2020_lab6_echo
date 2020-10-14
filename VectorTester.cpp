@@ -92,6 +92,8 @@ int main()
    std::cout << std::endl;
    std::cout << "--------------------------" << std::endl;
    std::cout << "appended-to IntegerVector:" << std::endl;
+   appendDoubleVector(dv);
+   appendCharacterVector(dv);
    std::cout << "--------------------------" << std::endl;
 
    //-------------------------------------------------------------------------
