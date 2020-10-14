@@ -21,10 +21,13 @@ int IntegerVector::get(int index)  {
 // if index is size-legitimate, put the value at that index;
 // otherwise, use push_back to append to the end of the vector
 void IntegerVector::put(int value, int index){
-   if(0<index<integerVector.size()){
+   if(0<=index && index<integerVector.size()){
       std::vector<int>::iterator itr = integerVector.begin() + index;
          integerVector.insert(itr, value);
    }
+    else{
+        integerVector.push_back(value);
+    }
 }
 
 // use push_back to append
