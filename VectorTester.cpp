@@ -39,6 +39,8 @@ int main()
    iv.put(99, 3);
    std::cout << iv.size() << std::endl;
    std::cout << iv.get(1) << "[99]" <<std::endl;
+   std::cout << "[out of range error message next line]" << std::endl;
+   std::cout << iv.get(4) << std::endl;   
    std::cout << "--------------" << std::endl;
 
    //-------------------------------------------------------------------------
